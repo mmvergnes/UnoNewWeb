@@ -1,0 +1,481 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    margin: 10px 0;
+    font-weight: 400;
+}
+
+p {
+    font-size: 1.1em;
+    margin: 10px 0;
+    font-weight: 400;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.uppercase-font {
+    text-transform: uppercase;
+}
+
+.text-bold {
+    font-weight: 700;
+}
+
+.container {
+    padding: 100px;
+}
+
+/********** navbar **********/
+
+nav {
+    padding: 20px 100px;
+    background-color: #333;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    padding-right: 20px;
+}
+
+nav ul li a {
+    text-decoration-line: none;
+    color: #fff;
+    font-size: 1em;
+    font-weight: 500;
+}
+
+/********** header **********/
+
+header {
+    width: 100%;
+    height: auto;
+}
+
+header.header-bg {
+    background-image: url('../img/header.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    padding-top: 150px;
+}
+
+header img {
+    width: 30%;
+}
+
+header h2 {
+    color: #fff;
+}
+
+
+/********** boxes **********/
+
+section.container-boxes {
+    padding: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+section.container-boxes figure {
+    width: 30%;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section.container-boxes figure p {
+    text-align: center;
+}
+
+section.container-boxes figcaption {
+    padding: 20px 0;
+}
+
+/********** slogan section **********/
+section.banner {
+    background-color: rgba(28, 117, 188, 0.2);
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.banner h1.slogan {
+    padding: 100px 0;
+    color: #1C75BC;
+    font-size: 3rem;
+}
+
+/********** location section **********/
+section.location {
+    width: 100%;
+    padding: 100px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section.location .location-txt,
+.social-media-txt {
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+section.location h2 {
+    padding-bottom: 20px;
+}
+
+section iframe {
+    border: 0;
+}
+
+
+/********** social media section **********/
+section.social-media {
+    background-color: rgba(51, 51, 51, 0.1);
+    padding: 50px 0;
+    margin-top: -5px;
+}
+
+section.social-media h2 {
+    color: #1C75BC;
+}
+
+section.social-media .container-social-media {
+    display: flex;
+    justify-content: center;
+}
+
+section.social-media .container-social-media .icon-social-media {
+    padding: 0 20px;
+}
+
+/********** footer **********/
+
+footer {
+    background-color: #333;
+    padding: 20px 100px;
+}
+
+footer .fast-links {
+    display: flex;
+    justify-content: space-between;
+}
+footer .fast-links .address{
+display: flex;
+flex-direction: column;
+}
+footer .fast-links .address .location{
+    display: flex;
+}
+footer .fast-links .address .location img{
+    margin-right: 10px;
+}
+
+footer .fast-links p {
+    color: #fff;
+    font-weight: 500;
+}
+
+footer .fast-links a {
+    text-decoration: none;
+}
+
+footer .fast-links ul li {
+    list-style-type: none;
+    color: #fff;
+    font-weight: 300;
+    line-height: 25px;
+    padding-left: 15px;
+}
+
+footer .fast-links img.qr {
+    padding-right: 0;
+}
+
+footer .fast-links p.second-line {
+    padding-left: 23px;
+}
+
+footer hr {
+    color: #fff;
+    margin: 50px 0 20px 0;
+}
+
+footer p.powered-txt {
+    color: #fff;
+    font-size: 0.5rem;
+}
+
+footer p.powered-txt span {
+    font-weight: 600;
+    color: #fff;
+}
+
+
+/*********** ACTIVIDADES PAGE ***********/
+section.activity-title {
+    padding: 0 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+section.activity-title img{
+    padding: 0 10px;
+}
+
+section.activity-title h1 {
+    font-size: 2rem;
+    padding: 50px 0;
+}
+
+.activity-title input {
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+section.activity-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 100px;
+}
+
+img.activities {
+    width: 20%;
+    border-radius: 20px;
+}
+
+/*********** PLANES UNO PASS PAGE ***********/
+section.pass-title h1 {
+    font-size: 2rem;
+    padding: 50px 100px 10px 100px;
+}
+
+section.pass-title a {
+    text-decoration: none;
+    color: #1C75BC;
+}
+
+section.container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.container figure {
+    width: 20%;
+    padding: 0 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container figure figcaption {
+    text-align: center;
+}
+
+.container figure h2.pack-1 {
+    color: #189233;
+}
+
+.container figure h2.pack-2 {
+    color: #FF9900;
+}
+
+.container figure h2.pack-3 {
+    color: #BC1C72;
+}
+
+.container figure h2.pack-4 {
+    color: #1C75BC;
+}
+
+.container figure p {
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.container figure img.box {
+    width: 120%;
+}
+
+.container figure button.buy-btn {
+    border: 2px solid #1C75BC;
+    background-color: transparent;
+    border-radius: 20px;
+    color: #1C75BC;
+    font-weight: 700;
+    padding: 5px 10px;
+    margin: 30px 0;
+}
+
+.container figure button.buy-btn:hover {
+    background-color: #1C75BC;
+    color: #fff;
+}
+
+/*********** CALENDARIO PAGE ***********/
+
+.calendar-title h1 {
+    font-size: 2rem;
+    padding: 50px 100px 10px 100px;
+}
+
+.activity-per-hour ul li {
+    list-style-type: none;
+}
+
+.none-activity {
+    background-color: #1c74bc44;
+}
+
+.grid{
+    width: 100%;
+    display: grid;
+}
+.grid-template-columns-row{
+    grid-template-columns: 1fr repeat(6, 2fr);
+    grid-template-rows: 50px;
+    row-gap: 10px;
+}
+.week{
+    color: #1C75BC;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.bg-cal-blue{
+    background-color: #1C75BC;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 10px 0 0 10px;
+    padding: 20px 0;
+}
+.bg-cal-border{
+    border: 2px solid #1C75BC;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.bg-cal-border-last{
+    border: 2px solid #1C75BC;
+    border-radius: 0px 10px 10px 0px;
+}
+
+
+
+/*********** CONTACTO PAGE ***********/
+
+form {
+    padding: 50px 55px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+label {
+    font-size: 1rem;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+input,
+textarea {
+    padding: 17px 25px;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    background-color: #cccccc7a;
+    color: #33333380;
+    outline: none;
+    border: none;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #33333380;
+}
+
+button.btn-reset {
+    width: 30%;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    background-color: transparent;
+    color: #333;
+    cursor: pointer;
+}
+
+button.btn-submit {
+    width: 30%;
+    padding: 10px;
+    border-radius: 20px;
+    border: 2px solid #1C75BC;
+    background-color: #1C75BC;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.contact-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+
+
+/******* RESPONSIVE ********/
+
+@media (width < 768px){
+    
+}
