@@ -16,7 +16,6 @@ h4 {
 
 p {
     font-size: 1.1em;
-    margin: 10px 0;
     font-weight: 400;
 }
 
@@ -119,10 +118,9 @@ section.banner {
     align-items: center;
 }
 
-    section.banner h1.slogan {
-        padding: 100px 0;
+    section.banner h1.slogan,
+    span {
         color: #1C75BC;
-        font-size: 3rem;
     }
 
 /********** location section **********/
@@ -224,6 +222,8 @@ footer hr {
 footer p.powered-txt {
     color: #fff;
     font-size: 0.5rem;
+    margin-bottom: 0;
+    padding-bottom: 16px;
 }
 
 footer p.powered-txt span {
@@ -253,16 +253,16 @@ section.activity-title {
 
 section.activity-grid {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    align-content: space-between;
-    justify-content: space-between;
-    align-items: center;
     padding: 50px 0px;
+}
+section.activity-grid .activity-column{
+    flex: 20%;
+    max-width: 20%;
 }
 
 img.activities {
-    width: 20%;
+    width: 100%;
     border-radius: 20px;
 }
 
@@ -382,7 +382,9 @@ section.container {
     border: 1px solid #1C75BC;
     border-radius: 0px 10px 10px 0px;
 }
-
+.accordion {
+    display: none;
+}
 
 
 /*********** CONTACTO PAGE ***********/
@@ -455,6 +457,119 @@ button.btn-submit {
 
 /******* RESPONSIVE ********/
 
-@media (width < 768px){
-    
+@media only screen and (max-width: 768px) {
+    /****** navbar ******/
+    ul.navbar-nav.nav-container {
+        padding-left: 10px;
+    }
+
+    /****** footer ******/
+   footer .footer-logotype {
+        text-align: center;
+   }
+   footer .fast-links,
+   .address,
+   .second-line,
+   .location {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        text-align: center;
+   }
+   footer .fast-links .info,
+   .regret-button,
+   .qr-image {
+        display: none;
+   }
+
+   /***** index *****/
+    header.header-bg{
+        height: 40vh;
+        padding-top: 80px;
+    }
+    header img {
+        width: 50%;
+    }
+    header h2 {
+        font-size: 1em;
+    }
+   section.container-boxes {
+        padding: 50px 0;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+   }
+   section.container-boxes figure{
+        width: 100%;
+   }   
+   section.banner{
+        height: 200px;
+   }
+   section.banner h1.slogan {
+        text-align: center;
+        padding: 20px 30px;
+        color: #1C75BC;
+        font-size: 2.1rem;
+    }
+    section.banner h1.slogan span {
+        text-align: center;
+        color: #1C75BC;
+        font-size: 2.1rem;
+    }
+    section.location {
+        padding: 50px 0 0 0;
+    }
+
+    /***** actividades *****/
+    section.activity-title input {
+        display: none;
+    }
+    section.activity-title h1 {
+        font-size: 1.5em;
+        padding: 50px 0 0 0;
+    }
+    section.activity-grid .activity-column{
+        flex: 50%;
+        max-width: 50%;
+    }
+
+    /***** planes uno pass *****/
+    section.pass-title h1 {
+        font-size: 1.5em;
+    }
+    section.container {
+        display: flex;
+        flex-direction: column;
+    }
+    .container figure {
+        width: 100%;
+    }
+
+    /***** calendario *****/
+    section.calendar-grid{
+        display: none;
+    }
+    .accordion {
+        display: flex;
+        flex-direction: column;
+    }
+    button.accordion-button {
+        color: #1C75BC;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    button.accordion-button:not(.collapsed) {
+        color: #1C75BC;
+        font-weight: 700;
+        text-transform: uppercase;
+        background-color: white;
+    }
+    .grid-template-columns-row {
+        grid-template-columns: 1fr 1fr;;
+    }
+    .bg-cal-border {
+        border-radius: 0 10px 10px 0;
+    }
 }
