@@ -4,4 +4,4 @@ _Uno Bahía Club, es uno de los gimnasios más completos e importantes de Bahía
 
 
 ---
-⌨️ con ❤️ por [mmvergnes](https://github.com/mmvergnes)) 😊
+⌨️ con ❤️ por [mmvergnes](https://github.com/mmvergnes) 😊
