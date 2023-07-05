@@ -5,7 +5,7 @@ _Uno Bahía Club, es uno de los gimnasios más completos e importantes de Bahía
 
 ## Vista Previa de nuestro proyecto
 
-![](/Home-alta.jpg)
+![](./wireframes/desktop/alta/Home-alta.jpg)
 
 
 ---
