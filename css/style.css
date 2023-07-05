@@ -40,36 +40,24 @@ p {
     font-weight: 700;
 }
 
-.container {
-    padding: 100px;
-}
 
 /********** navbar **********/
-
-nav {
-    padding: 20px 100px;
+.my-nav {
     background-color: #333;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
 }
+    .my-nav img {
+        width: 100px;
+        height: auto;
+    }
+    .my-nav a{
+        color: #fff;
+        font-weight: 500;
+    }
+    .my-nav a:hover{
+        color: #ccc;        
+    }
 
-nav ul {
-    list-style-type: none;
-    display: flex;
-}
 
-nav ul li {
-    padding-right: 20px;
-}
-
-nav ul li a {
-    text-decoration-line: none;
-    color: #fff;
-    font-size: 1em;
-    font-weight: 500;
-}
 
 /********** header **********/
 
@@ -78,21 +66,21 @@ header {
     height: auto;
 }
 
-header.header-bg {
-    background-image: url('../img/header.jpeg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 80vh;
-    padding-top: 150px;
-}
+    header.header-bg {
+        background-image: url('../img/header.jpeg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 80vh;
+        padding-top: 150px;
+    }
 
-header img {
-    width: 30%;
-}
+    header img {
+        width: 30%;
+    }
 
-header h2 {
-    color: #fff;
-}
+    header h2 {
+        color: #fff;
+    }
 
 
 /********** boxes **********/
@@ -105,22 +93,22 @@ section.container-boxes {
     align-items: baseline;
 }
 
-section.container-boxes figure {
-    width: 30%;
-    padding: 10px 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+    section.container-boxes figure {
+        width: 30%;
+        padding: 10px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
-section.container-boxes figure p {
-    text-align: center;
-}
+        section.container-boxes figure p {
+            text-align: center;
+        }
 
-section.container-boxes figcaption {
-    padding: 20px 0;
-}
+    section.container-boxes figcaption {
+        padding: 20px 0;
+    }
 
 /********** slogan section **********/
 section.banner {
@@ -131,11 +119,11 @@ section.banner {
     align-items: center;
 }
 
-section.banner h1.slogan {
-    padding: 100px 0;
-    color: #1C75BC;
-    font-size: 3rem;
-}
+    section.banner h1.slogan {
+        padding: 100px 0;
+        color: #1C75BC;
+        font-size: 3rem;
+    }
 
 /********** location section **********/
 section.location {
@@ -147,15 +135,15 @@ section.location {
     align-items: center;
 }
 
-section.location .location-txt,
-.social-media-txt {
-    padding-bottom: 50px;
-    text-align: center;
-}
+    section.location .location-txt,
+    .social-media-txt {
+        padding-bottom: 50px;
+        text-align: center;
+    }
 
-section.location h2 {
-    padding-bottom: 20px;
-}
+    section.location h2 {
+        padding-bottom: 20px;
+    }
 
 section iframe {
     border: 0;
@@ -186,48 +174,47 @@ section.social-media .container-social-media .icon-social-media {
 
 footer {
     background-color: #333;
-    padding: 20px 100px;
 }
 
-footer .fast-links {
-    display: flex;
-    justify-content: space-between;
-}
-footer .fast-links .address{
-display: flex;
-flex-direction: column;
-}
-footer .fast-links .address .location{
-    display: flex;
-}
-footer .fast-links .address .location img{
-    margin-right: 10px;
-}
+    footer .fast-links {
+        display: flex;
+        justify-content: space-between;
+    }
+        footer .fast-links .address{
+        display: flex;
+        flex-direction: column;
+        }
+            footer .fast-links .address .location{
+                display: flex;
+            }
+                footer .fast-links .address .location img{
+                    margin-right: 10px;
+                }
 
-footer .fast-links p {
-    color: #fff;
-    font-weight: 500;
-}
+        footer .fast-links p {
+            color: #fff;
+            font-weight: 500;
+        }
 
-footer .fast-links a {
-    text-decoration: none;
-}
+        footer .fast-links a {
+            text-decoration: none;
+        }
 
-footer .fast-links ul li {
-    list-style-type: none;
-    color: #fff;
-    font-weight: 300;
-    line-height: 25px;
-    padding-left: 15px;
-}
+            footer .fast-links ul li {
+                list-style-type: none;
+                color: #fff;
+                font-weight: 300;
+                line-height: 25px;
+                padding-left: 15px;
+            }
 
-footer .fast-links img.qr {
-    padding-right: 0;
-}
+            footer .fast-links img.qr {
+                padding-right: 0;
+            }
 
-footer .fast-links p.second-line {
-    padding-left: 23px;
-}
+            footer .fast-links p.second-line {
+                padding-left: 23px;
+            }
 
 footer hr {
     color: #fff;
@@ -247,26 +234,22 @@ footer p.powered-txt span {
 
 /*********** ACTIVIDADES PAGE ***********/
 section.activity-title {
-    padding: 0 100px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
-section.activity-title img{
-    padding: 0 10px;
-}
 
-section.activity-title h1 {
-    font-size: 2rem;
-    padding: 50px 0;
-}
+    section.activity-title h1 {
+        font-size: 2rem;
+        padding: 50px 0;
+    }
 
-.activity-title input {
-    padding: 10px 10px 10px 10px;
-    border-radius: 10px;
-    border: 1px solid #ccc;
-}
+    .activity-title input {
+        padding: 10px 10px 10px 10px;
+        border-radius: 10px;
+        border: 1px solid #ccc;
+    }
 
 section.activity-grid {
     display: flex;
@@ -275,7 +258,7 @@ section.activity-grid {
     align-content: space-between;
     justify-content: space-between;
     align-items: center;
-    padding: 50px 100px;
+    padding: 50px 0px;
 }
 
 img.activities {
@@ -286,7 +269,7 @@ img.activities {
 /*********** PLANES UNO PASS PAGE ***********/
 section.pass-title h1 {
     font-size: 2rem;
-    padding: 50px 100px 10px 100px;
+    padding: 50px 0px 10px 0px;
 }
 
 section.pass-title a {
@@ -300,7 +283,7 @@ section.container {
 }
 
 .container figure {
-    width: 20%;
+    width: 24%;
     padding: 0 20px;
     border: 1px solid #ccc;
     border-radius: 10px;
@@ -355,14 +338,12 @@ section.container {
 }
 
 /*********** CALENDARIO PAGE ***********/
-
-.calendar-title h1 {
-    font-size: 2rem;
-    padding: 50px 100px 10px 100px;
+.activity-per-hour ul{
+    padding-left: 0;
 }
-
 .activity-per-hour ul li {
     list-style-type: none;
+    text-align: start;
 }
 
 .none-activity {
@@ -391,14 +372,14 @@ section.container {
     padding: 20px 0;
 }
 .bg-cal-border{
-    border: 2px solid #1C75BC;
-    padding: 10px;
+    border: 1px solid #1C75BC;
+    padding-left: 10px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
 }
 .bg-cal-border-last{
-    border: 2px solid #1C75BC;
+    border: 1px solid #1C75BC;
     border-radius: 0px 10px 10px 0px;
 }
 
@@ -426,14 +407,12 @@ label {
     font-size: 1rem;
     color: #333;
     font-weight: 600;
-    margin-bottom: 15px;
+    padding: 5px 0;
 }
 
 input,
 textarea {
-    padding: 17px 25px;
-    border-radius: 25px;
-    margin-bottom: 20px;
+    padding: 10px;
     background-color: #cccccc7a;
     color: #33333380;
     outline: none;
@@ -448,7 +427,7 @@ textarea::placeholder {
 button.btn-reset {
     width: 30%;
     padding: 10px;
-    border-radius: 20px;
+    border-radius: 10px;
     border: none;
     background-color: transparent;
     color: #333;
@@ -458,7 +437,7 @@ button.btn-reset {
 button.btn-submit {
     width: 30%;
     padding: 10px;
-    border-radius: 20px;
+    border-radius: 10px;
     border: 2px solid #1C75BC;
     background-color: #1C75BC;
     color: #fff;
