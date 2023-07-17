@@ -1,0 +1,22 @@
+.my-nav {
+    background-color: $textColor;
+    a {
+        color: $white;
+        font-weight: 500;
+        &:hover {
+            color: $navHover;
+        }
+        img {
+            width: 100px;
+            height: auto;
+        }
+    }
+    svg.bi-list {
+        width: 20px;
+        height: 20px;
+        fill: $white;
+    }    
+}
+
+
+

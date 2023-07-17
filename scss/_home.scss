@@ -1,0 +1,99 @@
+// header
+header {
+    width: 100%;
+    height: auto;
+
+    &.header-bg {
+        background-image: url('../img/header.jpeg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 80vh;
+        padding-top: 150px;
+    }
+
+    img {
+        width: 30%;
+    }
+
+    h2 {
+        color: $white;
+    }
+}
+
+
+
+//boxes
+.container-boxes {
+    padding: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+
+    figure {
+        width: 30%;
+        padding: 10px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: $textCenter;
+        align-items: center;
+
+        img {
+            width: 30%;
+            height: auto;
+        }
+
+        p {
+            text-align: $textCenter;
+        }
+    }
+
+    figcaption {
+        padding: 20px 0;
+    }
+}
+
+
+//slogan
+.banner {
+    background-color: rgba(28, 117, 188, 0.2);
+    height: 400px;
+    display: flex;
+    justify-content: $textCenter;
+    align-items: $textCenter;
+
+    h1 {
+
+        &.slogan,
+        span {
+            color: $mainColor;
+        }
+    }
+}
+
+
+//location
+.location {
+    width: 100%;
+    padding: 100px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: $textCenter;
+    align-items: $textCenter;
+
+    .location-txt,
+    .social-media-txt {
+        padding-bottom: 50px;
+        text-align: $textCenter;
+    }
+
+    h2 {
+        padding-bottom: 20px;
+    }
+}
+
+iframe {
+    border: 0;
+    width: 100%;
+    height: 600px;
+}

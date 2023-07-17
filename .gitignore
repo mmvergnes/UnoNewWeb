@@ -2,4 +2,4 @@
 *.map
 *.vscode
 *.ai
-node_module/r
+node_modules
