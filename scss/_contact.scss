@@ -1,7 +1,8 @@
+@import '_mixins';
+
 form {
+    @include shadow( 20px, $white, 9px);
     padding: 50px 55px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    border-radius: 20px;
     text-align: $textCenter;
     width: 100%;
     max-width: 500px;
@@ -23,14 +24,19 @@ form {
         [type="email"],
         [type="tel"],
         textarea {
+            @include shadow( 15px, $navHover, 2px);
             border-radius: 20px !important;
             margin-bottom: 10px !important;
-            padding: 10px;
-            background-color: #cccccc7a;
-            color: #33333380;
-            outline: none;
+            color: #33333380;            
             border: none;
-
+            outline: none;
+            padding: 1em;
+            transition: 300ms ease-in-out;
+            &:focus{
+                @include shadow( 15px, $white, 5px);
+                transform: scale(1.02);
+                  
+            }
             &::placeholder,
             &::placeholder {
                 color: #33333380;
@@ -55,11 +61,10 @@ form {
             }
 
             &.btn-submit {
+                @include shadow( 10px, $mainColor, 3px);
                 width: 30%;
                 padding: 10px;
-                border-radius: 10px;
                 border: 2px solid $mainColor;
-                background-color: $mainColor;
                 color: $white;
                 font-weight: $textBold;
                 cursor: pointer;

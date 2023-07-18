@@ -1,0 +1,30 @@
+//extends
+.buy-btn{
+    border: 2px solid $mainColor;
+    background-color: transparent;
+    border-radius: 20px;
+    color: $mainColor;
+    font-weight: $textBold;
+    padding: 5px 10px;
+    margin: 30px 0;
+    &:hover{
+        background-color: $mainColor;
+        color: $white;
+    }
+}
+.btn-reset{
+    @extend .buy-btn;
+    color: $textColor;
+    border: 1px solid $textColor;
+}
+.btn-submit{
+    @extend .buy-btn;
+}
+
+//mixins
+@mixin shadow( $radius, $bg, $eje){
+    border-radius: $radius;
+    background: $bg;
+    box-shadow: ($eje) ($eje) ($eje*2) $navHover,
+                (-$eje) (-$eje) ($eje*2) $white;
+ }
