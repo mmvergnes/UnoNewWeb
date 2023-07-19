@@ -59,7 +59,7 @@
 
         button {
             &.buy-btn {
-                @include shadow(20px,$white,3px);
+                @include shadow(20px, $white, 3px);
                 border: 2px solid $mainColor;
                 color: $mainColor;
                 font-weight: $textBold;
@@ -67,7 +67,7 @@
                 margin: 30px 0;
 
                 &:hover {
-                    @include shadow(20px,$mainColor,3px);
+                    @include shadow(20px, $mainColor, 3px);
                     color: $white;
                 }
             }

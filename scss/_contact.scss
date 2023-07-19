@@ -1,5 +1,5 @@
 form {
-    @include shadow( 20px, $white, 9px);
+    @include shadow(20px, $white, 9px);
     padding: 50px 55px;
     text-align: $textCenter;
     width: 100%;
@@ -22,19 +22,21 @@ form {
         [type="email"],
         [type="tel"],
         textarea {
-            @include shadow( 15px, $navHover, 2px);
+            @include shadow(15px, $navHover, 2px);
             border-radius: 20px !important;
             margin-bottom: 10px !important;
-            color: #33333380;            
+            color: #33333380;
             border: none;
             outline: none;
             padding: 1em;
             transition: 300ms ease-in-out;
-            &:focus{
-                @include shadow( 15px, $white, 5px);
+
+            &:focus {
+                @include shadow(15px, $white, 5px);
                 transform: scale(1.02);
-                  
+
             }
+
             &::placeholder,
             &::placeholder {
                 color: #33333380;
@@ -59,7 +61,7 @@ form {
             }
 
             &.btn-submit {
-                @include shadow( 10px, $mainColor, 3px);
+                @include shadow(10px, $mainColor, 3px);
                 width: 30%;
                 padding: 10px;
                 border: 2px solid $mainColor;

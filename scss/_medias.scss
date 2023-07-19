@@ -7,7 +7,7 @@
                 padding-left: 10px;
             }
         }
-    }    
+    }
 
 
     //footer
@@ -15,6 +15,7 @@
         .footer-logotype {
             text-align: $textCenter;
         }
+
         .fast-links,
         .address,
         .second-line,
@@ -25,37 +26,42 @@
             align-items: $textCenter;
             text-align: $textCenter;
         }
+
         .fast-links {
+
             .info,
             .regret-button,
             .qr-image {
                 display: none;
             }
         }
-   
+
     }
 
 
     //index
     header {
         &.header-bg {
-        height: 40vh;
-        padding-top: 80px;
+            height: 40vh;
+            padding-top: 80px;
         }
+
         img {
             width: 50%;
         }
+
         h2 {
             font-size: 1em;
         }
     }
- 
+
     .container-boxes {
         padding: 50px 0;
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
         align-items: $textCenter;
+
         figure {
             width: 100%;
         }
@@ -63,12 +69,14 @@
 
     .banner {
         height: 200px;
-        h1{
-            &.slogan{
+
+        h1 {
+            &.slogan {
                 text-align: $textCenter;
                 padding: 20px 30px;
                 color: $mainColor;
                 font-size: 2.1rem;
+
                 span {
                     text-align: $textCenter;
                     color: $mainColor;
@@ -85,15 +93,17 @@
     //actividades
     .activity-title {
         input {
-        display: none;
+            display: none;
         }
+
         h1 {
             font-size: 1.5em;
             padding: 50px 0 0 0;
-        }        
+        }
     }
+
     .activity-grid {
-        .activity-column{
+        .activity-column {
             flex: 50%;
             max-width: 50%;
         }
@@ -103,13 +113,14 @@
     //planes
     .pass-title {
         h1 {
-        font-size: 1.5em;
+            font-size: 1.5em;
         }
     }
 
     .plan-container {
         display: flex;
         flex-direction: column;
+
         figure {
             width: 100%;
             padding: 0 10px;
@@ -129,11 +140,11 @@
 
     button {
         &.accordion-button {
-        color: $mainColor;
-        font-weight: $textBold;
-        text-transform: $textUppercase;
-        
-            &:not(.collapsed){
+            color: $mainColor;
+            font-weight: $textBold;
+            text-transform: $textUppercase;
+
+            &:not(.collapsed) {
                 color: $mainColor;
                 font-weight: $textBold;
                 text-transform: $textUppercase;
@@ -142,7 +153,7 @@
         }
     }
 
-   
+
     .grid-template-columns-row {
         grid-template-columns: 1fr 1fr;
     }

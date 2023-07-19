@@ -1,7 +1,7 @@
 //mixins
-@mixin shadow( $radius, $bg, $eje){
+@mixin shadow($radius, $bg, $eje) {
     border-radius: $radius;
     background: $bg;
     box-shadow: ($eje) ($eje) ($eje*2) $navHover,
-                (-$eje) (-$eje) ($eje*2) $white;
- }
+        (-$eje) (-$eje) ($eje*2) $white;
+}
