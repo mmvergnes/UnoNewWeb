@@ -27,6 +27,7 @@ footer {
         p {
             color: $white;
             font-weight: $textRegular;
+            cursor: pointer;
 
             &.second-line {
                 padding-left: 23px;
@@ -44,6 +45,7 @@ footer {
                 font-weight: $textLight;
                 line-height: 25px;
                 padding-left: 15px;
+                cursor: pointer;
             }
         }
 

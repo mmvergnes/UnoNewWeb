@@ -7,19 +7,25 @@ header {
         background-image: url('../img/header.jpeg');
         background-repeat: no-repeat;
         background-size: cover;
-        height: 80vh;
-        padding-top: 150px;
+        height: 100vh;
+        padding-top: 230px;
+        margin-top: -100px;
     }
 
     img {
         width: 30%;
+        animation-name: textAlpha;
+        animation-duration: 3s;
+        animation-timing-function: ease;
     }
 
     h2 {
         color: $white;
+        animation-name: textAlpha;
+        animation-duration: 5s;
+        animation-timing-function: ease;
     }
 }
-
 
 
 //boxes

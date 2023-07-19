@@ -1,22 +1,11 @@
-.buy-btn, .btn-submit, .btn-reset {
-  border: 2px solid #1C75BC;
-  background-color: transparent;
-  border-radius: 20px;
-  color: #1C75BC;
-  font-weight: 700;
-  padding: 5px 10px;
-  margin: 30px 0;
+@keyframes textAlpha {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
-.buy-btn:hover, .btn-submit:hover, .btn-reset:hover {
-  background-color: #1C75BC;
-  color: #fff;
-}
-
-.btn-reset {
-  color: #333;
-  border: 1px solid #333;
-}
-
 * {
   font-family: "Montserrat", sans-serif;
   color: #333;
@@ -78,24 +67,29 @@ p {
   transform: scale(1.05);
 }
 
-.my-nav {
-  background-color: #333;
+.my-nav, .nav-dark {
+  background: #333;
+  background: linear-gradient(180deg, rgba(51, 51, 51, 0.7903536415) 62%, rgba(255, 255, 255, 0) 100%);
 }
-.my-nav a {
+.my-nav a, .nav-dark a {
   color: #fff;
   font-weight: 500;
 }
-.my-nav a:hover {
+.my-nav a:hover, .nav-dark a:hover {
   color: #ccc;
 }
-.my-nav a img {
+.my-nav a img, .nav-dark a img {
   width: 100px;
   height: auto;
 }
-.my-nav svg.bi-list {
+.my-nav svg.bi-list, .nav-dark svg.bi-list {
   width: 20px;
   height: 20px;
   fill: #fff;
+}
+
+.nav-dark {
+  background-color: #333;
 }
 
 footer {
@@ -123,6 +117,7 @@ footer .fast-links .address .footer-location a {
 footer .fast-links p {
   color: #fff;
   font-weight: 400;
+  cursor: pointer;
 }
 footer .fast-links p.second-line {
   padding-left: 23px;
@@ -136,6 +131,7 @@ footer .fast-links ul li {
   font-weight: 300;
   line-height: 25px;
   padding-left: 15px;
+  cursor: pointer;
 }
 footer .fast-links img .qr {
   padding-right: 0;
@@ -170,14 +166,21 @@ header.header-bg {
   background-image: url("../img/header.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 80vh;
-  padding-top: 150px;
+  height: 100vh;
+  padding-top: 230px;
+  margin-top: -100px;
 }
 header img {
   width: 30%;
+  animation-name: textAlpha;
+  animation-duration: 3s;
+  animation-timing-function: ease;
 }
 header h2 {
   color: #fff;
+  animation-name: textAlpha;
+  animation-duration: 5s;
+  animation-timing-function: ease;
 }
 
 .container-boxes {
@@ -269,6 +272,7 @@ iframe {
 .activity-grid .activity-column img.activities {
   width: 100%;
   border-radius: 20px;
+  cursor: pointer;
 }
 
 .pass-title h1 {
@@ -316,7 +320,7 @@ iframe {
 .plan-container figure img.box {
   width: 120%;
 }
-.plan-container figure button.buy-btn, .plan-container figure button.btn-reset, .plan-container figure button.btn-submit {
+.plan-container figure button.buy-btn {
   border-radius: 20px;
   background: #fff;
   box-shadow: 3px 3px 6px #ccc, -3px -3px 6px #fff;
@@ -326,7 +330,7 @@ iframe {
   padding: 5px 10px;
   margin: 30px 0;
 }
-.plan-container figure button.buy-btn:hover, .plan-container figure button.btn-reset:hover, .plan-container figure button.btn-submit:hover {
+.plan-container figure button.buy-btn:hover {
   border-radius: 20px;
   background: #1C75BC;
   box-shadow: 3px 3px 6px #ccc, -3px -3px 6px #fff;
