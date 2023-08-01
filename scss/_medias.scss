@@ -166,3 +166,22 @@
         padding: 50px 25px;
     }
 }
+
+@media only screen and (max-width: 425px) {
+    .container {
+        .plan-btn {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            a {
+                &.btn-pay {
+                    width: 100%;
+                    margin-top: 10px;
+
+                }
+            }
+        }
+    }
+
+}

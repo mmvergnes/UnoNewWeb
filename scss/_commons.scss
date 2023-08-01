@@ -66,3 +66,33 @@ p {
         }
     }
 }
+
+// Page not found
+.error-title {
+    margin-bottom: 100px;
+    h4 {
+        padding: 50px 0px 10px 0px;
+        color: $mainColor;
+
+        &.error-description{
+            padding: 10px 0 20px 0;
+        }
+    }
+    a {
+        &.btn-back{
+            background: $mainColor;
+            border: 2px solid $mainColor;
+            color: $white;
+            text-decoration: none;
+            border-radius: 20px;
+            padding: 10px 30px;
+        }
+    }
+}
+
+svg{
+    width: 200px;
+    height: auto;
+    fill: $navHover;
+}
+

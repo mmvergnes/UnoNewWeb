@@ -67,6 +67,31 @@ p {
   transform: scale(1.05);
 }
 
+.error-title {
+  margin-bottom: 100px;
+}
+.error-title h4 {
+  padding: 50px 0px 10px 0px;
+  color: #1C75BC;
+}
+.error-title h4.error-description {
+  padding: 10px 0 20px 0;
+}
+.error-title a.btn-back {
+  background: #1C75BC;
+  border: 2px solid #1C75BC;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 20px;
+  padding: 10px 30px;
+}
+
+svg {
+  width: 200px;
+  height: auto;
+  fill: #ccc;
+}
+
 .my-nav, .nav-dark {
   background: #333;
   background: linear-gradient(180deg, rgba(51, 51, 51, 0.7903536415) 62%, rgba(255, 255, 255, 0) 100%);
@@ -339,6 +364,45 @@ iframe {
   color: #fff;
 }
 
+.img-pack img.box {
+  width: 100%;
+}
+
+h2.pack-1 {
+  color: #189233;
+}
+h2.pack-2 {
+  color: #FF9900;
+}
+h2.pack-3 {
+  color: #BC1C72;
+}
+h2.pack-4 {
+  color: #1C75BC;
+}
+
+.plan-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+.plan-btn a.btn-pay {
+  border-radius: 10px;
+  background: #1C75BC;
+  box-shadow: 3px 3px 6px #ccc, -3px -3px 6px #fff;
+  width: 45%;
+  padding: 10px;
+  border: 2px solid #1C75BC;
+  color: #fff;
+  cursor: pointer;
+}
+.plan-btn a.btn-pay:active {
+  border: 2px solid #1C75BC;
+  color: #1C75BC;
+}
+
 .activity-per-hour ul {
   padding-left: 0;
 }
@@ -575,6 +639,17 @@ form .contact-btn button.btn-submit {
   }
   form {
     padding: 50px 25px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .container .plan-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .container .plan-btn a.btn-pay {
+    width: 100%;
+    margin-top: 10px;
   }
 }
 

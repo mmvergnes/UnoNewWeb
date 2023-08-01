@@ -30,19 +30,19 @@
 
         h2 {
             &.pack-1 {
-                color: $green;
+                @include green($green);
             }
 
             &.pack-2 {
-                color: $orange;
+                @include orange($orange);
             }
 
             &.pack-3 {
-                color: $pink;
+                @include pink($pink);
             }
 
             &.pack-4 {
-                color: $mainColor;
+                @include blue($mainColor);
             }
         }
 
@@ -70,6 +70,53 @@
                     @include shadow(20px, $mainColor, 3px);
                     color: $white;
                 }
+            }
+        }
+    }
+}
+
+.img-pack {
+    img {
+        &.box {
+            width: 100%;
+        }
+    }
+}
+
+h2 {
+    &.pack-1 {
+        @include green($green);
+    }
+    &.pack-2 {
+        @include orange($orange);
+    }
+    &.pack-3 {
+        @include pink($pink);
+    }
+    &.pack-4 {
+        @include blue($mainColor);
+    }
+}
+
+.plan-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+
+    a {
+        &.btn-pay {
+            @include shadow(10px, $mainColor, 3px);
+            width: 45%;
+            padding: 10px;
+            border: 2px solid $mainColor;
+            color: $white;
+            cursor: pointer;
+
+            &:active {
+                border: 2px solid $mainColor;
+                color: $mainColor;
             }
         }
     }
