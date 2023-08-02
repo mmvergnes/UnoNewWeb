@@ -64,10 +64,10 @@
         <section class="container py-5 px-5">
             <div data-aos="fade-up">
                 <div class="row">
-                    <div class="col-lg-4 col-12 img-pack">
+                    <div class="col-lg-6 col-12 img-pack">
                         <img class="box" src="../img/box-frecuente.png" alt="Box frecuente">
                     </div>
-                    <div class="col-lg-8 col-12">
+                    <div class="col-lg-6 col-12">
                         <h2><span class="text-bold">Hasta 40 clases</span> para utilizar cuando quieras.</h2>
                         <h2 class="pack-2 text-bold">$10.200.-</h2>
                         <p>Los créditos se podrán canjear por clases
@@ -78,13 +78,37 @@
                             en créditos puede disminuir del valor
                             nominal, pero nunca una clase puede superar ese valor.</p>
                         <div class="plan-btn">
-                            <a class="btn btn-pay" href="#" role="button">Pagar con Mercado Pago</a>
-                            <a class="btn btn-pay" href="#" role="button">Pagar en UNO</a>
+                            <a class="btn btn-pay" href="./page-not-found.html" role="button">Pagar con Mercado Pago</a>
+                            <a class="btn btn-pay" href="#" role="button" data-bs-toggle="modal" data-bs-target="#cashModal">Pagar en UNO</a>
+                        </div>
+                        <div class="terms-and-conds">
+                            <span>Al confirmar la compra, se aceptan los <a href="./page-not-found.html">términos y condiciones</a></span>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
+        <!-- modal cash pay -->
+
+        <div class="modal" id="cashModal" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="../img/succeess.png" alt="Compra exitosa">
+                  <p class="text-bold">¡Felicitaciones!</p>
+                  <p>Tu compra se encuentra pendiente de pago.</p>
+                  <p>Sigue las instrucciones que te enviamos por email.</p>
+                  <p>¡Te esperamos!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <!-- fin modal -->
         <section class="social-media text-center">
             <h2 class="social-media-txt text-bold">Seguinos en nuestras redes</h2>
             <div class="container-social-media">
@@ -137,14 +161,14 @@
                     <p class="uppercase-font">Información útil</p>
                     <p>Información para socios</p>
                     <ul>
-                        <li>Términos y condiciones</li>
-                        <li>Política de privacidad</li>
-                        <li>Normas de convivencia</li>
+                        <li><a href="./page-not-found.html">Términos y condiciones</a></li>
+                        <li><a href="./page-not-found.html">Política de privacidad</a></li>
+                        <li><a href="./page-not-found.html">Normas de convivencia</a></li>
                     </ul>
-                    <p>Sugerencias</p>
+                    <p><a href="./page-not-found.html">Sugerencias</a></p>
                 </div>
                 <div class="regret-button">
-                    <p class="uppercase-font">Botón de arrepentimiento</p>
+                    <a class="uppercase-font" role="button" href="./page-not-found.html">Botón de arrepentimiento</a>
                 </div>
                 <div class="qr-image">
                     <img class="qr" src="../img/data-fiscal.jpeg" alt="QR de Data Fiscal">

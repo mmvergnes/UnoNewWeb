@@ -87,12 +87,15 @@ h2 {
     &.pack-1 {
         @include green($green);
     }
+
     &.pack-2 {
         @include orange($orange);
     }
+
     &.pack-3 {
         @include pink($pink);
     }
+
     &.pack-4 {
         @include blue($mainColor);
     }
@@ -119,5 +122,25 @@ h2 {
                 color: $mainColor;
             }
         }
+    }
+}
+
+.modal {
+    .modal-header{
+        border-bottom: none;
+    }
+    .modal-body {
+        padding-bottom: 40px;
+        img {
+            width: 50%;
+        }
+    }
+}
+
+.terms-and-conds {
+    padding: 20px 0;
+
+    span {
+        font-size: small;
     }
 }

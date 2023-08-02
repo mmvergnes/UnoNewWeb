@@ -165,7 +165,23 @@
     form {
         padding: 50px 25px;
     }
+
+    //natacion
+    .container-info{
+        figure {
+            p{
+                font-size: small;
+            }
+        }
+    }
+    .sub-types-grid {
+        .sub-types-column {
+            flex: 50%;
+            max-width: 50%;
+        }
+    }
 }
+
 
 @media only screen and (max-width: 425px) {
     .container {
@@ -182,6 +198,23 @@
                 }
             }
         }
+    }
+
+    //natacion
+    .banner-info{
+        height: 600px;
+        .container-info{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            flex-direction: column;
+            figure {
+                width: 100%;
+                p{
+                    font-size: small;
+                }
+            }
+    }
     }
 
 }

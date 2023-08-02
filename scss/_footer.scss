@@ -56,6 +56,31 @@ footer {
         }
     }
 
+    .info {
+        ul {
+            li {
+                a {
+                    color: $white;
+                    text-decoration: none;
+                }
+            }
+        }
+
+        p {
+            a {
+                color: $white;
+                text-decoration: none;
+            }
+        }
+    }
+
+    .regret-button {
+        a {
+            font-size: 17.5px;
+            color: $white;
+        }
+    }
+
     hr {
         color: $white;
         margin: 50px 0 20px 0;
