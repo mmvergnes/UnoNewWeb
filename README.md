@@ -18,6 +18,8 @@ Debido a que fue un proyecto que me generó mucha motivación y entusiasmo, y a 
 
 Para llevar a cabo mi proyecto, utilicé los siguientes lenguajes y tecnologías:
 
+[![My Skills](https://skillicons.dev/icons?i=html,vscode,css,sass,bootstrap,figma,git,github,flutter&perline=3)](https://skillicons.dev)
+
 HTML5
 | Visual Studio Code
 | CSS
@@ -58,4 +60,4 @@ https://unonewweb.netlify.app/
 
 
 ---
-⌨️ con ❤️ por [mmvergnes](https://github.com/mmvergnes) 😊
+👩‍💻 [mmvergnes](https://github.com/mmvergnes) 🇦🇷
