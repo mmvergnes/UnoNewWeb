@@ -49,7 +49,7 @@ https://unonewweb.netlify.app/
 
 ## Autor ✒️
 
-* **María Mercedes Vergnes** - UX/UI, Diseño, Maquetación, Codeo
+* **María Mercedes Vergnes** - UX/UI, Diseño, Maquetación, Codeo - https://www.behance.net/mervergnes
 
 
 ## Expresiones de Gratitud 🎁
